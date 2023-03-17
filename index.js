@@ -1,13 +1,13 @@
 
-  var dodger = document.getElementById('dodger');
+  const dodger = document.getElementById('dodger');
 
 dodger.style.backgroundColor = "#ff69b4";
 dodger.style.bottom = "100px";
 
 
 function moveDodgerLeft() {
-  var leftNumbers = dodger.style.left.replace('px', '');
-  var left = parseInt(leftNumbers, 10);
+  const leftNumbers = dodger.style.left.replace('px', '');
+  const left = parseInt(leftNumbers, 10);
 
   if ( left > 0 ) {
     dodger.style.left = `${left - 4}px`;
@@ -21,8 +21,8 @@ document.addEventListener("keydown", function (e) {
 
 
 function moveDodgerRight() {
-  var leftNumbers = dodger.style.left.replace('px', '');
-  var left = parseInt(leftNumbers, 10);
+  const LeftNumbers = dodger.style.left.replace('px', '');
+  const left = parseInt(leftNumbers, 10);
 
   if ( left < 360) {
     dodger.style.left = `${left + 4}px`;
